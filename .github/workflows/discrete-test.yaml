@@ -3,7 +3,7 @@ name: C/C++ tests
 
 on: 
   push:
-    branches: ["masters"]
+    branches: ["master"]
 
 jobs:
   build:
