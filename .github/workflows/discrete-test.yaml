@@ -1,0 +1,15 @@
+name: C/C++ tests
+
+
+on: 
+  push:
+    branches: ["masters"]
+
+jobs:
+  build:
+    runs-on: ubuntu:latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: compile
+        run: gcc ./lab1/factorial.c -o out && echo 5 | ./out
+
