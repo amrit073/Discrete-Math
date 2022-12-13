@@ -1,7 +1,4 @@
-#include <assert.h>
-#include <cmath>
 #include <iostream>
-#include <math.h>
 using namespace std;
 
 // modulo in cpp doesnt give required answer for euclidean calculaiton involving
@@ -14,7 +11,7 @@ int euclidean_remainder(int a, int b) {
 
 int main() {
   int a, b, t1, t2 = 0, t3 = 1, q, r = 1, t, n;
-  cout << "enter b and a for inverse of b in Zn\n";
+  cout << "enter b and n for inverse of b in Zn\n";
   cin >> b >> n;
   a = n;
   while (r != 0) {
