@@ -11,5 +11,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: compile
-        run: gcc ./lab1/factorial.c -o out && echo 5 | ./out
+        run: gcc ./lab-1/factorial.c -o out && echo 5 | ./out
 
