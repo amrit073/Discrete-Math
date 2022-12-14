@@ -11,7 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: compile
-        run: |
-          gcc ./*/*.c -o out
-          g++ ./*/*.cpp -o out
+        run: for i in $(find . -type f -name "*.c") ;do if grep math.h "$i">/dev/null; then gcc -o out $i -lm ;else gcc -o out $i; fi ; done && for i in $(find . -type f -name "*.cpp") ; do g++ -o out $i  ; done 
+
 
