@@ -11,5 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: compile
-        run: gcc ./*/*.c -o out
+        run: |
+          gcc ./*/*.c -o out
+          g++ ./*/*.cpp -o out
 
