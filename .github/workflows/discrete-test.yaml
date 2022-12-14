@@ -11,6 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: compile
-        run: chmod +x comp-test.sh && ./comp-test.sh 
+        run: chmod +x comp-test.sh &&  if ./comp-test.sh ; then exit 1; else exit 0; fi
+
 
 
